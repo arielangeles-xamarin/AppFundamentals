@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Fundamentals.MainPage"
+            BackgroundColor="White">
+
+    <ContentPage Title="{Binding DeviceOrientationTitle}" Icon="{Binding DeviceOrientationIcon}">
+        <StackLayout Margin="20,35,20,20">
+            <Label Text="Device Orientation"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   TextColor="Black"/>
+            <Button Text="Get Device Orientation"
+                    Command="{Binding GetDeviceOrientationCommand}"/>
+            <Label x:Name="orientationLabel"
+                   HorizontalOptions="Center" Text="{Binding OrientationLabel}"
+                   TextColor="Black"/>
+        </StackLayout>
+    </ContentPage>
+
+
+</TabbedPage>

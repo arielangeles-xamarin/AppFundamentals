@@ -2,7 +2,8 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="Fundamentals.MainPage"
-            BackgroundColor="White">
+            BackgroundColor="White"
+             xmlns:local="clr-namespace:Fundamentals;assembly=Fundamentals">
 
     <ContentPage Title="{Binding DeviceOrientationTitle}" Icon="{Binding DeviceOrientationIcon}">
         <StackLayout Margin="20,35,20,20">
@@ -15,6 +16,13 @@
             <Label x:Name="orientationLabel"
                    HorizontalOptions="Center" Text="{Binding OrientationLabel}"
                    TextColor="Black"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Custom Renderer">
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Hello, Custom Renderer!" />
+            <local:MyEntry Text="In Shared Code" />
         </StackLayout>
     </ContentPage>
 

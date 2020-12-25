@@ -26,5 +26,27 @@
         </StackLayout>
     </ContentPage>
 
+    <ContentPage Title="Focus Effect">
+        <StackLayout Padding="0,20,0,0">
+            <Label Text="Effects Demo - Focus Effect"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+            <Entry Text="Effect attached to an Entry"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand">
+                <Entry.Effects>
+                    <local:FocusEffect />
+                </Entry.Effects>
+                <Entry.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="iOS, Android"
+                        Value="220" />
+                        <On Platform="UWP"
+                        Value="250" />
+                    </OnPlatform>
+                </Entry.WidthRequest>
+            </Entry>
+        </StackLayout>
+    </ContentPage>
 
 </TabbedPage>

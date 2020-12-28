@@ -10,7 +10,7 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ResolutionGroupName("MyCompany")]
+[assembly: ResolutionGroupName("arielangeles")]
 [assembly: ExportEffect(typeof(FocusEffect), nameof(FocusEffect))]
 namespace Fundamentals.iOS
 {

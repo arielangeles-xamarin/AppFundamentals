@@ -12,7 +12,7 @@ using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ResolutionGroupName("MyCompany")]
+[assembly: ResolutionGroupName("arielangeles")]
 [assembly: ExportEffect(typeof(Fundamentals.Droid.FocusEffect), nameof(Fundamentals.Droid.FocusEffect))]
 namespace Fundamentals.Droid
 {

@@ -7,7 +7,7 @@ namespace Fundamentals
 {
 	public class FocusEffect : RoutingEffect
 	{
-		public FocusEffect() : base("MyCompany.FocusEffect")
+		public FocusEffect() : base("arielangeles.FocusEffect")
 		{
 		}
 	}
